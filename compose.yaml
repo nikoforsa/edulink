@@ -31,6 +31,8 @@ services:
     build: ./app
     restart: unless-stopped
     init: true
+    env_file:
+      - ~/.env
     depends_on:
       db:
         condition: service_healthy
