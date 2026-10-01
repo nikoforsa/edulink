@@ -118,3 +118,5 @@ docker compose start app
 Docker на машине подготовки не установлен: контейнерная сборка и запуск здесь не проверены. Результаты проверки дампа и исходников приведены в VALIDATION.md.
 
 Официальная документация: https://docs.docker.com/compose/how-tos/startup-order/ и https://docs.docker.com/guides/postgresql/
+
+## added github runner
