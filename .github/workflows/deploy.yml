@@ -6,6 +6,10 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v4
-      - run: docker compose up -d --build
-      - run: docker image prune -f
+      - name: Pull and rebuild
+        run: |
+          cd /opt/myapp
+          git fetch --all
+          git reset --hard origin/main
+          docker compose up -d --build
+          docker image prune -f
