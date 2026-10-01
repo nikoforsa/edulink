@@ -1,0 +1,17 @@
+{
+  "name": "edulink",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node start.js",
+    "start:postgres": "node start.js postgres",
+    "start:sqlite": "node start.js sqlite"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "nodemailer": "^10.0.0",
+    "pg": "^8.16.3"
+  }
+}

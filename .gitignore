@@ -1,0 +1,4 @@
+.env
+database/*.sql
+backups/
+client_secret*
