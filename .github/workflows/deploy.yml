@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Pull and rebuild
         run: |
-          cd /opt/myapp/edulink
+          cd /opt/edulink
           git fetch --all
           git reset --hard origin/main
           docker compose up -d --build
