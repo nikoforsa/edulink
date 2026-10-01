@@ -32,7 +32,7 @@ services:
     restart: unless-stopped
     init: true
     env_file:
-      - ~/.env
+      - /home/u_edulink/.env
     depends_on:
       db:
         condition: service_healthy
